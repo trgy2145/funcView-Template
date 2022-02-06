@@ -1,0 +1,17 @@
+{% load static %}
+<img src="{% static 'app/django.jpg' %}" alt="My image" style="width: 400px;">
+<link rel="stylesheet" href="{% static 'app/style.css' %}">
+<h1>THİS İS TEMPLATE VİEW</h1>
+<h2>{{title}}</h2> <br>
+<h2>{{dict1.django}}</h2> <br>
+<h2>
+    <li>{{my_list.0}}</li>
+</h2>
+
+
+{% for num in my_list  %}
+    <h3>
+        <li>{{num}}</li>
+    </h3>
+{% endfor %}
+    
